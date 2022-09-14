@@ -1,5 +1,16 @@
 @extends('layouts.main')
 
 @section('container')
-    <h1>Halaman Posts</h1>
+    
+    @foreach ($posts as $isinya)
+    <article class="mb-5">
+        <h2>
+            <a href="/posts/{{ $isinya["slug"] }}">
+                {{ $isinya["title"] }}
+            </a>
+        </h2>
+        <h5>{{ $isinya["author"] }}</h5>
+        <p>{{ $isinya["body"]}}</p>
+    </article>
+    @endforeach
 @endsection
