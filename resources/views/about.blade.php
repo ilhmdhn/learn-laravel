@@ -4,5 +4,5 @@
 <h1>Ini Halaman About</h1>
 <h3>{{$name}}</h3>
 <p>{{$email}}</p>
-<img src= "img/{{$image}}" alt="thor" width="150px">
+<img src= "img/{{$image}}" alt="thor" width="150px" class="img-thumbnail rounded-circle">
 @endsection
