@@ -12,7 +12,7 @@ class PostController extends Controller
             "title" => "Posts",
             "posts" => Post::all()
         ]);
-    }
+    } 
 
     public function show(Post $post){
         return view('post', [
