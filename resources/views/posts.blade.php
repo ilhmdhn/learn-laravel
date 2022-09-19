@@ -12,14 +12,12 @@
 
 
 
-        <p>By. <a href="/authors/{{ $post->user->username }}"> {{$post->user->name}}</a> in 
-            <a href="/categories/{{$post->category->slug}}" 
-                class="text-decoration-none">{{ $post->category->name }}</a></p>
-        <p>{{ $post->excerpt}}</p>
-        <a href="/posts/{{ $post->slug }}" class="text-decoration-none">Read More</a>
+        <p>By. <a href="/post-user/{{$post->user->username}}"> {{$post->user->name}}</a> in 
+               <a href="/categories/{{$post->category->slug}}" class="text-decoration-none">{{ $post->category->name }}</a></p>
 
-        <br><br>
-        <p>{{$post}}</p>
+        <p>{{ $post->excerpt}}</p>
+
+        <a href="/posts/{{ $post->slug }}" class="text-decoration-none">Read More</a>
     </article>
     @endforeach
 @endsection
